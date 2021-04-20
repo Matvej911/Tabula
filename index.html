@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://website-making.ru/media/jui/js/jquery.min.js"></script>
+		<script src="https://website-making.ru/plugins/system/modalmessages/table-generator.js"></script>
+	</head>
+</style>
+	
+<div class="custom">
+	<style>
+#content{
+width:80%;
+margin:0 auto;
+margin-bottom:10px;
+}
+/*table,*/ td{
+	border:solid 1px rgb(26, 1, 1);
+}
+table{
+width:100%;
+border-collapse: separate;
+border-spacing:0;
+table-layout: fixed;
+}
+textarea{
+width:50%;
+height:240px;
+padding:10px 10px 10px 0;
+resize: vertical;
+text-align: center;
+}
+
+
+#cols,#rows{
+background:#fac522;
+
+font-weight:bold;
+text-align:center;
+padding:.15em;
+width:40px;
+border:none;
+}
+
+</style>
+<div id="content">
+
+<h1 style="font-style:italic;margin-top: 5px;">Tabulu ģenerators</h1>
+<center style="font-weight:bold;font-style:italic;">
+<div style="display:inline-block;margin-right:5px;">
+Rindas: <input id="rows" type="text" value="3" maxlength="3">
+</div> 
+<div style="display:inline-block;margin-left:5px;">
+Kolonnas: <input id="cols" type="text" value="3" maxlength="3">
+</div>
+</center>
+<div id="tableWrap"><table><tbody><tr><td class="c0 r0" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c1 r0" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c2 r0" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td></tr><tr><td class="c0 r1" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c1 r1" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c2 r1" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td></tr><tr><td class="c0 r2" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c1 r2" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td><td class="c2 r2" colspan="1" rowspan="1"><div contenteditable="true">&nbsp;</div></td></tr></tbody></table></div>
+<center> 
+	<input type="button" class="btn" id="generate" value="Ģenerēt">
+
+</center>
+
+
+</html>
+
